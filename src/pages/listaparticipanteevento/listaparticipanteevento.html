@@ -1,0 +1,47 @@
+<!--
+  Generated template for the ListaparticipanteeventoPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  
+    <ion-navbar>
+      <ion-title>lista de participantes</ion-title>
+    </ion-navbar>
+  
+  </ion-header>
+  
+  
+  <ion-content padding>
+  
+           <ion-list>
+             <ion-item *ngFor="let i of items">
+              <ion-card>
+                  <ion-card-content>  
+                <ion-grid>
+                    <ion-row>
+                      <ion-col>
+                          <p>{{i.nomeusuario}} </p>
+                          <p>Palestrante :  {{i.palestrante}} </p>
+                      </ion-col>
+                      <ion-col>
+                          <button ion-button color="green" 
+                          (click)="trocarstatuspaticipante(i.idusuario, i.presenca , 'ADM' )" round>
+                              <p>{{i.presenca}} </p>                              
+                          </button>                      
+                          
+                          <button ion-button color="green" 
+                          (click)="trocarpalestrante(i.idusuario, i.presenca , 'ADM' )" round>
+                             Palestrante                                   
+                          </button>                      
+    
+                      </ion-col>
+                    </ion-row>
+                  </ion-grid>       
+                </ion-card-content> 
+              </ion-card>
+             </ion-item>
+           </ion-list>
+  </ion-content>
+  

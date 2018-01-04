@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Webescola</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+
+   <!-- <ion-tabs>
+        <ion-tab tabIcon="call" [root]="tabOne" tabBadge="3" tabBadgeStyle="danger"></ion-tab>
+        <ion-tab tabIcon="chatbubbles" [root]="tabTwo" tabBadge="14" tabBadgeStyle="danger"></ion-tab>
+        <ion-tab tabIcon="musical-notes" [root]="tabThree"></ion-tab>
+   </ion-tabs>
+  -->
+
+  <h2>Bem Vindo {{ nomeusuariologado }}</h2>
+  <!--    <ion-thumbnail item-start>
+        <img src="img/thumbnail-totoro.png">
+      </ion-thumbnail>
+      <h2>My Neighbor Totoro</h2>
+      <p>Hayao Miyazaki • 1988</p>
+      <button ion-button clear item-end>View</button>
+    -->
+    <ion-card>
+      <img src="img/nin-live.png"/>
+      <ion-card-content>
+        <ion-card-title>
+           Webescola  
+        </ion-card-title>
+        <p>
+          Webescola é uma aplicação para ajudar na interação entre os palestrantes e aos que assistem.
+        </p>
+        <p>
+          O palestrante pode passar exercícios para os inscritos.
+        </p>
+        <p>      
+          Em poucos minutos ter o retorno de quantas foram respondidas corretamente.
+        </p>
+      </ion-card-content>
+    </ion-card>
+
+    <button ion-button block (click)="listaeventos()">Lista de Eventos</button>
+    <button ion-button block (click)="novoevento()">Novo Evento</button>
+    
+</ion-content>
